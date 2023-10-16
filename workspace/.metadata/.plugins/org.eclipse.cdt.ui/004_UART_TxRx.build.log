@@ -1,0 +1,24 @@
+02:11:29 **** Incremental Build of configuration Debug for project 004_UART_TxRx ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:7: warning: assignment to 'uint8_t' {aka 'unsigned char'} from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  130 |   var = NULL;
+      |       ^
+../Core/Src/main.c:132:10: warning: comparison between pointer and integer
+  132 |   if(var != NULL)
+      |          ^~
+arm-none-eabi-gcc -o "004_UART_TxRx.elf" @"objects.list"   -mcpu=cortex-m7 -T"E:\GitHub\STM32F746\workspace\004_UART_TxRx\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004_UART_TxRx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 004_UART_TxRx.elf
+ 
+arm-none-eabi-size   004_UART_TxRx.elf 
+arm-none-eabi-objdump -h -S  004_UART_TxRx.elf  > "004_UART_TxRx.list"
+   text	   data	    bss	    dec	    hex	filename
+  16316	    340	   3236	  19892	   4db4	004_UART_TxRx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 004_UART_TxRx.list
+ 
+
+02:11:31 Build Finished. 0 errors, 2 warnings. (took 2s.115ms)
+
