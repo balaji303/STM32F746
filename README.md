@@ -2,6 +2,7 @@
 
 The STM32F746 microcontroller is part of the STM32 family, which offers a wide range of powerful and flexible microcontrollers suitable for a variety of applications. The STM32F746 series is particularly known for its high-performance ARM Cortex-M7 core, advanced peripherals, and extensive connectivity options.
 
+![Image](https://github.com/balaji303/STM32F746/blob/main/docs/image.png)
 
 ## Document Links
 
