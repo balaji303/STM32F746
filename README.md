@@ -40,3 +40,13 @@ The STM32F746 microcontroller is suitable for a wide range of applications, incl
 - Medical devices.
 - Advanced motor control.
 - High-end consumer products.
+
+## Other STM32 Repositories
+
+A collection of STM32 projects:
+
+- [STM32F100C8](https://github.com/balaji303/STM32F100C8)
+- [STM32L475](https://github.com/balaji303/STM32L475)
+- [STM32H7B3-DK](https://github.com/balaji303/STM32H7B3-DK)
+- [STM32F446RE](https://github.com/balaji303/STM32F446RE)
+
